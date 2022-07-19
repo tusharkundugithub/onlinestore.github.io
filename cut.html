@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viwport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png"width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px"class="cut-icon">
+            <img src="images/menu.png"class="menu-icon" onclick="menutoggle()">
+        </div>  
+        
+    </div>
+    <!----------------Cut Item Details---------------->
+    <div class="small-contanar cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quentity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="Cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Read Printed T-Shart</p>
+                            <small>price: $50</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number"value="1"></td>
+                <td>$42</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="Cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Shous</p>
+                            <small>price: $35</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number"value="1"></td>
+                <td>$35</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="Cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Pants</p>
+                            <small>price: $40</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number"value="1"></td>
+                <td>$50</td>
+            </tr>
+        </table>
+        <div class="Total-price">
+            <table>
+                <tr>
+                    <td>Sub Total</td>
+                    <td>$127</td>
+                </tr>
+                <tr>
+                    <td>tax</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$162</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+ 
+    <!----------------footer----------------->
+    <div class="footer">
+        <div class="contanar">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Downlode Our App</h3>
+                    <p>Downlode App from Android and ios mobil Phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose is to Sustainably <br>Make the Pleasur and benefits of sports of sporce Accessible to the Many</p>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Used Full links</h3>
+                    <ul>
+                        <li>Coupans</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    
+                    </ul>
+                   
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us </h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>You Tube</li>
+                    
+                    </ul>
+                   
+                </div>
+            </div>
+            <hr>
+            <p class="Coppy-ride">Coppy Ride 2022</p>
+        </div>
+    </div>
+    <!-----------------Js for toggle manu ---------->
+    <script>
+        var menuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight ="200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+   
+</body>
+</html>
